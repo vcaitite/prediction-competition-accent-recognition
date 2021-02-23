@@ -25,7 +25,10 @@ for (count in 1:length(class)) {
 x_test <- as.matrix(data_test[1:22, 2:13])
 
 # Escalonando os valores dos atributos para que fiquem restritos entre 0 e 1
-
+x_all <- rbind(x_train, x_test)
+x_all <- staggeringMatrix(x_all, nrow(x_all), ncol(x_all))
+x_train <- x_all[1:53, ]
+x_test <- x_all[54:75, ]
 
 # Treinando modelo:
 retlist<-trainPerceptron(x_train, y_train, 0.1, 0.01, 1000, 1)
