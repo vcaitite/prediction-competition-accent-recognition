@@ -4,7 +4,6 @@ source("~/Documents/UFMG/9/Redes Neurais/TP1/prediction-competition-accent-recog
 source("~/Documents/UFMG/9/Redes Neurais/exemplos/escalonamento_matrix.R")
 library(caret)
 
-correct <- c(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, -1)
 # Carregando base de dados:
 path <- file.path("~/Documents/UFMG/9/Redes Neurais/TP1/prediction-competition-accent-recognition/databases", "treino.csv")
 data_train <- read.csv(path)

@@ -39,7 +39,7 @@ trainRBF <- function(xin, yin, p){
       if(is.null(row)){
         row <- 0
       }
-      # Para garantir que não haverá erro (caso tenha apeanas uma linha)
+      # Para garantir que não haverá erro (caso tenha apenas uma linha)
       if(row > 1){
         covi <- cov(xci)  
       }
